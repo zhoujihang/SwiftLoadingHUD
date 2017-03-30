@@ -6,7 +6,8 @@ swift版的hud加载框视图
 * viewcontroller 级别，每个vc都拥有属于自己的hud
 * window 级别，一个遮住所有界面的hud
 * win级别hud出现时，自动隐藏vc级别的hud，消失时通知隐藏的hud显示 
-* 采用 objc_setAssociatedObject 方法在扩展中添加视图属性，无侵入，自动管理hud的引用计数，使用简单
+* 侵入小，采用 objc_setAssociatedObject 方法在扩展中添加视图属性
+* 使用方便，自动管理hud的显示、隐藏计数器，计数器为0则隐藏，便于处理多网络请求时的hud显示管理
 
 --- 
 viewcontroller级别显示hud
